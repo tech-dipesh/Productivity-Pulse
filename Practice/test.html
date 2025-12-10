@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testing</title>
+</head>
+<body>
+  <div>
+    <ul>
+      <li>Test
+        <span></span>
+      </li>
+      <input type="checkbox" name="Please enter your name">
+      <li>Second</li>
+    </ul>
+  </div>
+  <script>
+
+    let checkBoxValue=document.querySelector("input")
+    console.log(new Date().toLocaleTimeString());
+
+
+
+    window.addEventListener("keyup", (e)=>{
+      // if(e.key=="Control" && e.key=="Enter"){
+      if(e.key=="Enter" && e.ctrlKey){
+            console.log("Control key is selected.");
+      }
+    })
+  </script>
+</body>
+
+</html>
